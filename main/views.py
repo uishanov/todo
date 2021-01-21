@@ -5,4 +5,5 @@ def homepage(request):
     return HttpResponse('Hello world') 
     # функция
 
-    
+def second(request):
+    return HttpResponse('test2 page') 
