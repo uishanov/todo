@@ -6,4 +6,7 @@ def homepage(request):
     # функция
 
 def second(request):
-    return HttpResponse('test2 page') 
+    return HttpResponse('This is page test3') 
+
+# def third(request):
+#     return HttpResponse(' test2')
