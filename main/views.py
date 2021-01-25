@@ -5,6 +5,16 @@ from .models import ToDo
 def homepage(request):
     return render(request, "index.html")
 
+def addup(request):
+    return render(request, "addup.html")
+
+def change(request):
+    return render(request, "change.html")
+
+def delet(request):
+    return render(request, "delet.html")
+
+
 
 def test(request):
     todo_list = ToDo.objects.all()
