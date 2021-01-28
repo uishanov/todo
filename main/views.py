@@ -1,10 +1,16 @@
 from django.shortcuts import render, HttpResponse, redirect
 from .models import ToDo
+from .models import ShopBooks
 
 
-# def books(request):
-#     ShopBooks_list = ToDo.objects.all()
-#     return render(request, "books.html", {"todo_list": todo_list})
+#   def books(request):
+#      ShopBooks_list = ShopBooks.objects.all()
+#      return render(request, "books.html", {"ShopBooks_list": ShopBooks_list})
+
+
+def books(request):
+    ShopBooks_list = ShopBooks.objects.all()
+    return render(request, "books.html", {"ShopBooks_list": ShopBooks_list})
 
 
 def homepage(request):
@@ -27,6 +33,8 @@ def books(request):
 def test(request):
     todo_list = ToDo.objects.all()
     return render(request, "test.html", {"todo_list": todo_list})
+
+
 
 
 def second(request):
